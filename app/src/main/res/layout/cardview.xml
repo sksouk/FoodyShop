@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    cardview:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txttt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ຫ້ອງ"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtms1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ໄອດີອໍເດີ້"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtms2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ລາຍການອາຫານ"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtms3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ລາຍການອາຫານ"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
