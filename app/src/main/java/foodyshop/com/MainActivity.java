@@ -32,7 +32,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private String url = "http://hoctiengviet.net/food_order/json/get_menu.php";
+    private String url = "http://hoctiengviet.net/food_order/json/get_order.php";
 
     private RecyclerView mList;
 
@@ -107,8 +107,10 @@ public class MainActivity extends AppCompatActivity {
                         JSONObject jsonObject = response.getJSONObject(i);
 
                         getjson getjson = new getjson();
+
+                        getjson.setPhong(jsonObject.getString("diachi"));
                         getjson.setName(jsonObject.getString("name"));
-                        getjson.setId(jsonObject.getInt("id"));
+                        getjson.setId(jsonObject.getInt("soluong"));
                         getjson.setPrice(jsonObject.getInt("price"));
 
                         movieList.add(getjson);

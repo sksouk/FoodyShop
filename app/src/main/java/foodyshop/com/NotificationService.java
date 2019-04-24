@@ -111,12 +111,12 @@ public class NotificationService extends Service {
                             @Override
                             public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                                 int mi = random.nextInt(9999 - 1000) + 1000;
-                                String name = dataSnapshot.getValue(String.class);
+                               // String name = dataSnapshot.getValue(String.class);
                                 String as = dataSnapshot.child("diachi").getValue(String.class);
                                 Notification notification = new NotificationCompat.Builder(App.getcontext(), CHANNEL_1_ID)
                                         .setSmallIcon(R.drawable.ic_launcher_background)
                                         .setContentTitle("co nguoi dat hang")
-                                        .setContentText(name)
+                                        .setContentText("now")
                                         .setPriority(NotificationCompat.PRIORITY_HIGH)
                                         .setCategory(NotificationCompat.CATEGORY_EVENT)
                                         .setDefaults(Notification.DEFAULT_ALL)

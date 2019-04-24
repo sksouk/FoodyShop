@@ -5,13 +5,15 @@ public class getjson {
     public String name;
     public int id;
     public int price;
+    public String Phong;
     public getjson() {
 
     }
-    public getjson(String name, int id, int price) {
+    public getjson(String name, int id, int price, String phong) {
         this.name = name;
         this.id  = id;
         this.price = price;
+        this.Phong = phong;
     }
     public String getName() {
         return name;
@@ -36,4 +38,8 @@ public class getjson {
     public void setPrice(int price) {
         this.price = price;
     }
+
+    public String getPhong(){return Phong;}
+
+    public void setPhong(String phong){this.Phong = phong;}
 }

@@ -35,6 +35,7 @@ public class JsonAdapter extends RecyclerView.Adapter<JsonAdapter.ViewHolder> {
         holder.textTitle.setText(data.getName());
         holder.textRating.setText(String.valueOf(data.getId()));
         holder.textYear.setText(String.valueOf(data.getPrice()));
+        holder.txtms3.setText(data.getPhong());
 
     }
 
@@ -44,7 +45,7 @@ public class JsonAdapter extends RecyclerView.Adapter<JsonAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView textTitle, textRating, textYear;
+        public TextView textTitle, textRating, textYear, txtms3;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -52,6 +53,7 @@ public class JsonAdapter extends RecyclerView.Adapter<JsonAdapter.ViewHolder> {
             textTitle = itemView.findViewById(R.id.txttt);
             textRating = itemView.findViewById(R.id.txtms1);
             textYear = itemView.findViewById(R.id.txtms2);
+            txtms3 = itemView.findViewById(R.id.txtms3);
         }
     }
 
